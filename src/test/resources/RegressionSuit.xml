@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression suite 1" >
+  <test name="Test suite 1" >
+    <classes>
+      <class name="com.mahesha.test1m1.LoginPapercut"/>
+      <class name="com.mahesha.test1m1.Dashboard"/>
+      <class name="com.mahesha.test1m1.Users"/>
+      <class name="com.mahesha.test1m1.Groups"/>
+      <class name="com.mahesha.test1m1.Accounts"/>
+      <class name="com.mahesha.test1m1.Printers"/>
+      <class name="com.mahesha.test1m1.Devices"/>
+      <class name="com.mahesha.test1m1.Reports"/>
+      <class name="com.mahesha.test1m1.Cards"/>
+      <class name="com.mahesha.test1m1.Options"/>
+      <class name="com.mahesha.test1m1.Logs"/>
+      <class name="com.mahesha.test1m1.About"/>
+      <class name="com.mahesha.test1m1.Version"/>
+      
+      
+    </classes>
+ </test>
+</suite>

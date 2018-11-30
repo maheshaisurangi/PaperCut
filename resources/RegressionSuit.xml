@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression suite 1" >
+  <test name="Test suite 1" >
+    <classes>
+      <!--  class name="com.mahesha.test1m1.LoginPapercut"/-->
+      <class name="com.mahesha.test1m1.Dashboard"/>
+    </classes>
+ </test>
+</suite>
