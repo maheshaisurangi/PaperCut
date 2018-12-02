@@ -26,7 +26,16 @@ class LoginPapercutBase extends BaseClass {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-		
+		finally{
+			try{
+				if(objfile !=null){
+					objfile.close();
+				}
+			} catch (IOException e){
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
 		driver.findElement(By.id("inputUsername")).sendKeys(property.getProperty("username"));
 		driver.findElement(By.id("inputPassword")).sendKeys(property.getProperty("password"));
 		driver.findElement(By.xpath("//*[@id='login']/input")).click();

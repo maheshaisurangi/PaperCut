@@ -33,7 +33,6 @@ public class BaseClass {
 	
 	@BeforeMethod
 	public void setUpBase() throws FileNotFoundException{
-		System.setProperty("webdriver.chrome.driver", "C:\\selenium-2.47.1\\Crome driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 		Properties property = new Properties();
@@ -45,7 +44,17 @@ public class BaseClass {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-		
+		finally{
+			try{
+				if(objfile !=null){
+					objfile.close();
+				}
+			} catch (IOException e){
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
+		System.setProperty(property.getProperty("browser"), property.getProperty("browser_location"));
 		driver.get(property.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
